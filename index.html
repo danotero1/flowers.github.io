@@ -6,12 +6,38 @@
             .ocultarInfo{
                 display: none;
             }
+            .centrarBoton{
+                position: absolute;
+
+                top: 50%;
+
+                left: 50%;
+
+                transform: translate(-50%, -50%);
+            }
+
+            #dos{
+                animation-delay: 2s;
+            }
+            #tres{
+                animation-delay: 3s;
+            }
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translate3d(0, -20%, 0);
+                }
+                to {
+                    opacity: 1;
+                    transform: translate3d(0, 0, 0);
+                }
+            }
         </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         
-        <div class="row">
+        <div class="row centrarBoton">
             <div class="col-md-6">
                 
             </div>
@@ -24,9 +50,9 @@
             </div>
         </div>
 
-        <div id="ocultar">
+        <div id="ocultar" class="ocultarInfo">
             <div class="row ">
-                <div class="col-md-6">
+                <div class="col-md-6 text-center">
                     <div class="card" style="width: 80%;     margin-left: 31px;">
                         <img src="f1.jpg" class="card-img-top">
                         <div class="card-body">
@@ -40,7 +66,7 @@
                
             </div>
             <br>
-            <div class="row ">
+            <div class="row " id="dos">
                 <div class="col-md-6">
                 
                 </div>
@@ -58,11 +84,11 @@
                
             </div>
             <br>
-            <div class="row ">
+            <div class="row " id="tres">
                 <div class="col-md-6">
               
                 </div>
-                <div class="col-md-6 text-left">
+                <div class="col-md-6 text-center">
                     <div class="card" style="width: 80%;     margin-left: 31px;">
                         <img src="f4.jpg" class="card-img-top">
                         <div class="card-body">
@@ -77,11 +103,16 @@
             </div>
             <br>
             <div class="row">
-             <div class="col-md-12">
+             <div class="col-md-12 text-center">
                  <h2 class="text-center"><b>Eres la mejor!!</b></h2>
-                <h3 class="text-center">Mereces cosas bonitas</h3>
-                <h4 class="text-center">Estoy orgulloso de ti!</h4>
-                <h5 class="text-center">Te quiero cosa!</h5>
+                 <h3 class="text-center">Mereces cosas bonitas</h3>
+                 <h4 class="text-center">Estoy orgulloso de ti!</h4>
+                 <h5 class="text-center">Te quiero cosa!</h5>
+                 <br>
+                 <button class="btn btn-success text-center" onclick="alertaM()">Un ultimo click</button>
+
+                 <br>
+                 <br>
              </div>   
             </div>
         </div>
@@ -90,8 +121,14 @@
             function clickO(){
              
                 document.getElementById('ocultar').style.display = 'block'
+                document.getElementById('ocultar').style.animation = 'fadeIn 1s';
+               
+                
                 document.getElementById('ocultarBoton').style.display = 'none'
             };
+            function alertaM(){
+                alert('Ten un bonito día !!!')
+            }
         </script>
     </body>
 </html>
