@@ -2,20 +2,96 @@
     <head>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <style>
+            .ocultarInfo{
+                display: none;
+            }
+        </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h1>Prueba de flowes</h1>
+        
         <div class="row">
             <div class="col-md-6">
                 
             </div>
-            <div class="col-md-6">
-                <button class="btn btn-primary">Haz click, Aqui!</button>
+            <div class="col-md-6 text-center">
+                <button class="btn btn-primary" id="ocultarBoton" onclick="clickO()">Haz click, Aqui!</button>
 
             </div>
             <div class="col-md-6">
 
             </div>
         </div>
+
+        <div id="ocultar">
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="card" style="width: 80%;     margin-left: 31px;">
+                        <img src="f1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">No puedo entregarte flores</h5>
+                            <p class="card-text">Asi que te las mando de una manera diferente.</p>
+                            <a href="https://vm.tiktok.com/ZMjD1UwjT/" target="_blank" class="btn btn-primary">Sorpresa bonita</a>
+                          </div>
+                    </div>
+    
+                </div>
+               
+            </div>
+            <br>
+            <div class="row ">
+                <div class="col-md-6">
+                
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="card" style="width: 80%;     margin-left: 31px;" class="text-center">
+                        <img src="f2.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Mereces muchas florecitas</h5>
+                            <p class="card-text">Pero sin hacerles daño, asi que asi son más bontias.</p>
+                            <a href="https://vm.tiktok.com/ZMjD13ddX/" target="_blank" class="btn btn-primary">Sorpresa bonita</a>
+                          </div>
+                    </div>
+    
+                </div>
+               
+            </div>
+            <br>
+            <div class="row ">
+                <div class="col-md-6">
+              
+                </div>
+                <div class="col-md-6 text-left">
+                    <div class="card" style="width: 80%;     margin-left: 31px;">
+                        <img src="f4.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Espero que te alegren el día un poquis</h5>
+                            <p class="card-text">Ten un dia tan lindo como tu, estas haciendo las cosas geniales <3.</p>
+                            <a href="https://vm.tiktok.com/ZMjDJjHD2/" target="_blank" class="btn btn-primary">Sorpresa bonita</a>
+                          </div>
+                    </div>
+    
+                </div>
+               
+            </div>
+            <br>
+            <div class="row">
+             <div class="col-md-12">
+                 <h2 class="text-center"><b>Eres la mejor!!</b></h2>
+                <h3 class="text-center">Mereces cosas bonitas</h3>
+                <h4 class="text-center">Estoy orgulloso de ti!</h4>
+                <h5 class="text-center">Te quiero cosa!</h5>
+             </div>   
+            </div>
+        </div>
+
+        <script>
+            function clickO(){
+             
+                document.getElementById('ocultar').style.display = 'block'
+                document.getElementById('ocultarBoton').style.display = 'none'
+            };
+        </script>
     </body>
 </html>
